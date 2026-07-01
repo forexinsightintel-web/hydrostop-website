@@ -1,0 +1,9 @@
+{
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/pages/:page", "destination": "/pages/:page.html" }
+  ],
+  "redirects": [
+    { "source": "/pages/commercial-flat-roofing", "destination": "/pages/commercial-flat-roofing.html", "permanent": false }
+  ]
+}
