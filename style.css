@@ -526,3 +526,34 @@ h2 + .lead { margin-top: -4px; }
   .trust-bar, .platforms-bar { padding: 15px 18px; }
   .trust-bar + .section, .platforms-bar + .section, .page-hero + .section { padding-top: 38px; }
 }
+
+/* ── LOGO BLENDING (final audit pass) ──────────────────────────────────────
+   The MyBuilder, Rated People, MyJobQuote and Bark badges are JPGs with baked
+   white backgrounds, so on the light grey bar each one sat in a visible white
+   rectangle. multiply blends white into whatever is behind it, which removes
+   the boxes without needing the images re-cut. */
+.platforms-inner img, .accred-inner img { mix-blend-mode: multiply; }
+.platforms-inner img { max-width: 130px; object-fit: contain; }
+
+/* The footer brand was the word "HydroStop" set in bold — no mark at all.
+   The emblem alone is used here rather than the full lockup, because the
+   lockup's navy wordmark is invisible on a navy footer. */
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+.footer-logo::before {
+  content: "";
+  width: 38px;
+  height: 38px;
+  flex-shrink: 0;
+  background: url("/favicon-180.png") center / contain no-repeat;
+}
+
+/* Long service lists in the footer were running to seven rows on a phone and
+   pushing the contact details off the bottom of a thumb's reach. */
+@media (max-width: 560px) {
+  .footer-col ul li { margin-bottom: 6px; }
+  .footer-logo::before { width: 34px; height: 34px; }
+}
