@@ -42,18 +42,31 @@
     </div>
   </header>
 
-  <!-- HERO — photo background, left-aligned -->
+    <!-- HERO — cross-fading photographs, CSS only. No JS, so it cannot fail to a blank panel. -->
   <section class="hero">
+    <div class="hero-slides" aria-hidden="true">
+      <i style="background-image:url('https://images.pexels.com/photos/38510717/pexels-photo-38510717.jpeg?auto=compress&cs=tinysrgb&w=1920')"></i>
+      <i style="background-image:url('https://images.pexels.com/photos/15914881/pexels-photo-15914881.jpeg?auto=compress&cs=tinysrgb&w=1920')"></i>
+      <i style="background-image:url('https://images.pexels.com/photos/34247761/pexels-photo-34247761.jpeg?auto=compress&cs=tinysrgb&w=1920')"></i>
+      <i style="background-image:url('https://images.pexels.com/photos/37623616/pexels-photo-37623616.jpeg?auto=compress&cs=tinysrgb&w=1920')"></i>
+    </div>
     <div class="container">
-      <span class="section-label" style="color:rgba(255,255,255,0.6)">Federation of Damp Qualified &nbsp;·&nbsp; Firestone &amp; Elevate Approved</span>
-      <h1>Damp Proofing &amp; EPDM Flat Roofing<br><em>Specialists</em></h1>
-      <p>Protecting homes and buildings across Wirral, Liverpool, Cheshire, Manchester &amp; North Wales. Qualified surveyors. <strong style="color:#e8a020;font-weight:700">30-year warranty on all flat roofing.</strong></p>
+      <span class="section-label" style="color:rgba(255,255,255,0.62)">Domestic &amp; Commercial &nbsp;·&nbsp; Wirral, Liverpool &amp; the North West</span>
+      <h1>Damp Proofing, Flat Roofing<br><em>&amp; Commercial Cladding</em></h1>
+      <p>Homes, warehouses, factories and commercial estates across Wirral, Liverpool, Cheshire, Manchester &amp; North Wales. Qualified surveyors, <strong style="color:#e8a020;font-weight:700">30-year warranty on all flat roofing.</strong></p>
+      <div class="hero-badges">
+        <span class="hero-badge">Federation of Damp Qualified</span>
+        <span class="hero-badge">Firestone &amp; Elevate Approved</span>
+        <span class="hero-badge">50+ Years Experience</span>
+        <span class="hero-badge">Fully Insured</span>
+      </div>
       <div class="cta-group">
-        <a href="/pages/damp-surveys.html" class="btn btn-primary">Book Free Damp Survey</a>
-        <a href="/pages/contact.html" class="btn btn-outline">Get a Quote Online</a>
+        <a href="/pages/damp-surveys.html" class="btn btn-primary">Book a Free Survey</a>
+        <a href="/pages/commercial-flat-roofing.html" class="btn btn-outline">Commercial Work</a>
         <a href="tel:01513487088" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3)">Call 0151 348 7088</a>
       </div>
     </div>
+    <div class="scroll-cue">Scroll</div>
   </section>
 
   <!-- TRUST BAR — dark, directly under hero -->
@@ -259,7 +272,76 @@
     </div>
   </section>
 
-  <!-- FINAL CTA -->
+    <!-- COMMERCIAL BAND -->
+  <section class="band dark reverse">
+    <div class="band-media" style="background-image:url('https://images.pexels.com/photos/15914881/pexels-photo-15914881.jpeg?auto=compress&cs=tinysrgb&w=1400')"></div>
+    <div class="band-body">
+      <span class="section-label">Commercial &amp; Industrial</span>
+      <h2>Warehouse roofs, factory cladding, estate-wide maintenance</h2>
+      <p class="lead">Large-format roofs need a different approach to a house. Access, programme, keeping the building trading while the work goes on &mdash; all of it planned before anyone gets on the roof.</p>
+      <ul class="checklist">
+        <li>Profiled metal roof and wall cladding, new and refurbishment</li>
+        <li>Overcladding &mdash; new roof over the old one, building stays open</li>
+        <li>Single ply, built-up felt and liquid applied systems</li>
+        <li>Cut edge corrosion, sheet replacement and gutter lining</li>
+        <li>Planned maintenance and reactive call-outs</li>
+      </ul>
+      <div class="cta-group" style="margin-top:26px">
+        <a href="/pages/commercial-flat-roofing.html" class="btn btn-primary">Commercial Roofing</a>
+        <a href="/pages/contact.html" class="btn btn-outline">Talk to us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMESTIC BAND -->
+  <section class="band">
+    <div class="band-media" style="background-image:url('https://images.pexels.com/photos/37704251/pexels-photo-37704251.jpeg?auto=compress&cs=tinysrgb&w=1400')"></div>
+    <div class="band-body">
+      <span class="section-label">Domestic</span>
+      <h2>Houses, extensions, garages and dormers</h2>
+      <p class="lead">The same systems and the same warranty, scaled to a home. Most domestic jobs are done inside a week, and you get a written report before anybody quotes.</p>
+      <ul class="checklist">
+        <li>EPDM flat roofing to extensions, garages and dormers</li>
+        <li>Flat roof repairs and full replacements</li>
+        <li>Damp proofing, tanking and mould treatment</li>
+        <li>Free survey, written report, no obligation</li>
+      </ul>
+      <div class="cta-group" style="margin-top:26px">
+        <a href="/pages/flat-roofing.html" class="btn btn-blue">Flat Roofing</a>
+        <a href="/pages/damp-surveys.html" class="btn btn-outline" style="color:var(--navy);border-color:#cbd5e3">Book a Survey</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="section section-alt">
+    <div class="container" style="max-width:900px;text-align:center">
+      <span class="section-label">On the roof</span>
+      <h2>Every job starts with getting up there and looking</h2>
+      <p class="lead" style="margin:0 auto 30px">Survey first, quote second. You get told what is actually wrong, what it will cost, and what happens if it is left another year.</p>
+      <div class="video-wrap">
+        <video autoplay loop muted playsinline preload="none" poster="https://images.pexels.com/photos/15914881/pexels-photo-15914881.jpeg?auto=compress&cs=tinysrgb&w=1280">
+          <source src="https://videos.pexels.com/video-files/4198783/4198783-hd_1920_1080_24fps.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="video-caption">Roof and cladding surveys carried out across the North West.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section">
+    <div class="container">
+      <span class="section-label">The work</span>
+      <h2>Commercial and domestic, same standard</h2>
+      <div class="shots" style="margin-top:26px">
+        <figure><img src="https://images.pexels.com/photos/38510717/pexels-photo-38510717.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Torch-applied waterproofing membrane on a flat roof" loading="lazy" width="800" height="600"><figcaption>Flat roof waterproofing</figcaption></figure>
+        <figure><img src="https://images.pexels.com/photos/13217458/pexels-photo-13217458.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Modern industrial metal cladding facade" loading="lazy" width="800" height="600"><figcaption>Metal cladding</figcaption></figure>
+        <figure><img src="https://images.pexels.com/photos/4115457/pexels-photo-4115457.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Aerial view of large warehouse roofs" loading="lazy" width="800" height="600"><figcaption>Warehouse roofs</figcaption></figure>
+        <figure><img src="https://images.pexels.com/photos/8853521/pexels-photo-8853521.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Safety equipment on a commercial metal roof" loading="lazy" width="800" height="600"><figcaption>Safety managed</figcaption></figure>
+      </div>
+    </div>
+  </section>
+<!-- FINAL CTA -->
   <section class="cta-section">
     <div class="container">
       <h2>Ready to Protect Your Property?</h2>
