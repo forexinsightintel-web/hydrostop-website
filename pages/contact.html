@@ -5,6 +5,14 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact Us — HydroStop</title>
   <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/favicon-180.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HydroStop Limited">
+  <meta property="og:title" content="Contact Us — HydroStop">
+  <meta property="og:description" content="Damp proofing and EPDM flat roofing across the North West.">
+  <meta property="og:image" content="https://www.hydro-stop.co.uk/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <header class="site-header">
@@ -36,12 +44,21 @@
         <div>
           <div class="contact-form">
             <h2 style="margin-bottom:24px">Request Your Free Survey</h2>
-            <form name="hydrostop-contact" method="POST" data-netlify="true" action="/pages/contact.html?success=true">
-              <div class="form-group"><label>Full Name *</label><input type="text" name="name" required placeholder="Your full name"></div>
-              <div class="form-group"><label>Phone Number *</label><input type="tel" name="phone" required placeholder="Your phone number"></div>
-              <div class="form-group"><label>Email Address *</label><input type="email" name="email" required placeholder="Your email"></div>
-              <div class="form-group"><label>Property Address / Postcode *</label><input type="text" name="address" required placeholder="Your address or postcode"></div>
-              <div class="form-group"><label>Type of Problem *</label>
+            <form action="https://formsubmit.co/contact@hydro-stop.co.uk" method="POST">
+              <input type="hidden" name="_subject" value="New website enquiry — hydro-stop.co.uk">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://www.hydro-stop.co.uk/pages/thank-you.html">
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+              <div class="form-row">
+                <div class="form-group"><label>Full name <span class="req">*</span></label><input type="text" name="name" required placeholder="Your full name"></div>
+                <div class="form-group"><label>Phone number <span class="req">*</span></label><input type="tel" name="phone" required placeholder="Best number to reach you"></div>
+              </div>
+              <div class="form-row">
+                <div class="form-group"><label>Email address <span class="req">*</span></label><input type="email" name="email" required placeholder="you@example.com"></div>
+                <div class="form-group"><label>Address or postcode <span class="req">*</span></label><input type="text" name="address" required placeholder="e.g. CH41 1AA"></div>
+              </div>
+              <div class="form-group"><label>What is the problem <span class="req">*</span></label>
                 <select name="problem" required>
                   <option value="">Please select...</option>
                   <option>Rising Damp</option>
@@ -56,8 +73,8 @@
                   <option>Not Sure — Need a Survey</option>
                 </select>
               </div>
-              <div class="form-group"><label>Brief Description</label><textarea name="description" placeholder="Tell us a bit more about the problem..."></textarea></div>
-              <div class="form-group"><label>Preferred Callback Time</label>
+              <div class="form-group"><label>Brief description</label><textarea name="description" placeholder="Tell us a bit more about the problem..."></textarea></div>
+              <div class="form-group"><label>Best time to call</label>
                 <select name="callback">
                   <option value="">When suits you best?</option>
                   <option>Morning (8am-12pm)</option>
